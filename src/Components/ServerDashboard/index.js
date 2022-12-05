@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
-import { ConsoleContentPane, ConsoleBox, ConsoleTextContainer, ConsoleTextLine, ContainerStatusBox, ContainerStatusLabel, ContainerStatusLight } from './dashboardElements.js';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useEffect, useState } from 'react'
+import { ConsoleContentPane, ConsoleBox, ConsoleTextContainer, ConsoleTextLine, ContainerStatusBox, ContainerStatusLabel, ContainerStatusLight, StartServerButton} from './dashboardElements.js';
 // import getContainerStatus from '../../runContainer';
 
 const ServerDashboard = () => {
@@ -7,6 +9,7 @@ const ServerDashboard = () => {
     <>
             <ConsoleContentPane>
                 <ContainerShortStatus />
+                <StartContainerBtn />
                 <ContainerConsole />
             </ConsoleContentPane> 
     </>
@@ -29,21 +32,47 @@ const ContainerShortStatus = () => {
 
 // console output
 
+function ConsoleLine(content) {
+    return (
+        <>
+            <li>
+                <ConsoleTextLine>
+                    { content }
+                </ConsoleTextLine>     
+            </li> 
+        </>
+    )
+}
+
+function sendStartServerCommand() {
+    fetch(`http://localhost:5000/container/start/232250`);
+}
+
+export function StartContainerBtn() {
+  return (
+    <StartServerButton onClick={sendStartServerCommand}>
+        <FontAwesomeIcon icon={faPlay}></FontAwesomeIcon>
+    </StartServerButton>
+  )
+}
+
+
 const ContainerConsole = () => {
-    const [ consoleDisplay, setConsoleDisplay ] = React.useState([]);
+    const [ consoleDisplay, setConsoleDisplay ] = useState([""]);
 
-    for (var i=0; i<25; i++) {
-        consoleDisplay.push(`hello world ${i}`);
-    }
-
-
+    useEffect(() => {
+        fetch('http://localhost:5000/container/console').then((resp) => resp.json()).then((data) => {
+            console.log(`data: ${data}`)
+            console.log(`data.data: ${data.data}`);
+            setConsoleDisplay(data);
+        });
+    }, [])
 
     return (
         <>
             <ConsoleBox>
                 <ConsoleTextContainer>
-                    {/* { consoleDisplay.map((l) => <ConsoleTextLine readOnly>{l}</ConsoleTextLine>)} */}
-                    {}
+                    {consoleDisplay.map((e) => ConsoleLine(e.data)) }
                 </ConsoleTextContainer>
             </ConsoleBox>
         </>

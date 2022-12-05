@@ -61,4 +61,9 @@ export const ConsoleTextLine = styled.p`
     background-color: inherit;
     color: white;
     width: auto;
+    display: block;
 `;
+
+export const StartServerButton = styled.button`
+
+`

@@ -1,15 +1,14 @@
 const { Docker } = require("node-docker-api");
-const docker = new Docker({ socketPath: '/var/run/docker.sock' });
-const os = require("os");
+const docker = new Docker();
 
 function getContainer() {
-    console.log(os.platform());
     return docker.container.get('steamapp');
 }
 
 async function runContainer(steamAppId) {
+    
     try {
-        getContainer().kill().then(() => docker.container.prune({ }))
+        getContainer().kill().then(() => docker.container.prune()).catch(() => { return })
     } catch {
         console.log("existing container not found");
     } finally {
@@ -34,20 +33,36 @@ async function getLogs() {
     })
 }
 
-async function getContainerStatus() {
-    return getContainer().stats()
+async function getContainerStatus(resp) {
+    getContainer().stats().then((stats) => {
+        stats.on('data', (chunk) => {
+            if (!resp.headersSent) {
+                resp.send(chunk.toString());
+            }
+        });
+        stats.on('error', err => resp.send(err));
+    })
 }
 
-async function getLogStream(consumer) {
+async function getLog(resp) {
     return getContainer().logs({
         stdout: true,
         stderr: true,
-        follow: true
+        follow: false
     }).then(stream => {
-        stream.on('data', data => consumer(data));
-        // stream.on('end', resolve);
-        // stream.on('error', reject)
+        var data = [];
+        stream.on('data', (chunk) => {
+            data.push({ "data": chunk.toString().substring(2) });
+        });
+        stream.on('end', () => {
+            console.log(data);
+            resp.send(data);
+        })
+    })
+    .catch((err) => {
+        resp.send(JSON.stringify({ "data": "Container is stopped..." }));
+        console.log(JSON.stringify({ "data": "Container is stopped..." }));
     });
 }
 
-module.exports = { getLogStream, runContainer, getContainer, getContainerStatus };
+module.exports = { getLog, runContainer, getContainer, getContainerStatus };
