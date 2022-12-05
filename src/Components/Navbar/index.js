@@ -1,16 +1,33 @@
-import React from 'react';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, } from './NavbarElements';
+import React, {useState, useEffect} from 'react';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
+
 
 const Navbar = () => {
-
 
     return(
         <>
             <Nav >
                 <NavbarContainer>
                     <NavLogo to='/' >
-                        SteamStick. Eat my ass we are basically going to have to make a front page, then make another page similar to this that allows us to create our steam cmd docker container then we get hella profit
+                        SteamStick
                     </NavLogo>
+                    <MobileIcon >
+                        
+                    </MobileIcon>
+                    <NavMenu>
+                        <NavItem>
+                            <NavLinks to="Summary" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Summary</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="Bio" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Bio</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="ServerDeploy" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Server Deploy</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="Refrences" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Refrences</NavLinks>
+                        </NavItem>
+                    </NavMenu>
                 </NavbarContainer>
             </Nav>
         </>
