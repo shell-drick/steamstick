@@ -1,0 +1,330 @@
+[
+    {
+        "Name": "Black Mesa: Deathmatch Dedicated Server",
+        "Id": "346680",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "BlazeRush Dedicated Server",
+        "Id": "332850",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Counter-Strike Dedicated Server",
+        "Id": "90",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Counter-Strike Global Offensive Dedicated Server",
+        "Id": "740",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": "Login for public server"
+    },
+    {
+        "Name": "Counter-Strike: Condition Zero Dedicated Server",
+        "Id": "90",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": "+app_set_config \"90 mod czero\""
+    },
+    {
+        "Name": "Counter-Strike: Source Dedicated Server",
+        "Id": "232330",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Chivalry Medieval Warfare Dedicated Server",
+        "Id": "220070",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Dark Horizons: Mechanized Corps Dedicated Server",
+        "Id": "312070",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Day of Defeat Dedicated Server",
+        "Id": "90",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": "+app_set_config \"90 mod dod\""
+    },
+    {
+        "Name": "Day of Defeat: Source Dedicated Server",
+        "Id": "232290",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Day of Infamy Dedicated Server",
+        "Id": "462310",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Deathmatch Classic Dedicated Server",
+        "Id": "90",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": "+app_set_config \"90 mod dmc\""
+    },
+    {
+        "Name": "Don't Starve Together Dedicated Server",
+        "Id": "343050",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Fistful of Frags Server",
+        "Id": "295230",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Garry's Mod Dedicated Server",
+        "Id": "4020",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Half-Life 2: Deathmatch Dedicated Server",
+        "Id": "232370",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Hurtworld dedicated server",
+        "Id": "405100",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": "Bat file\u00a0for server."
+    },
+    {
+        "Name": "Half-Life Deathmatch: Source Dedicated server",
+        "Id": "255470",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Half-Life Dedicated Server",
+        "Id": "90",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Half-Life: Opposing Force Server",
+        "Id": "90",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": "+app_set_config \"90 mod gearbox\""
+    },
+    {
+        "Name": "Insurgency 2014 Dedicated Server",
+        "Id": "237410",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Insurgency: Modern Infantry Combat Dedicated Server",
+        "Id": "17705",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Just Cause 2: Multiplayer - Dedicated Server",
+        "Id": "261140",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Killing Floor 2 Dedicated Server",
+        "Id": "232130",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Left 4 Dead 2 Dedicated Server",
+        "Id": "222860",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Left 4 Dead Dedicated Server",
+        "Id": "222840",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "NS2: Combat Dedicated Server",
+        "Id": "313900",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Out of Reach Dedicated Server",
+        "Id": "406800",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Pirates, Vikings, and Knights II Dedicated Server",
+        "Id": "17575",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Ricochet Dedicated Server",
+        "Id": "90",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": "+app_set_config \"90 mod ricochet\""
+    },
+    {
+        "Name": "Rust Dedicated Server",
+        "Id": "258550",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Source SDK Base 2006 MP Dedicated Server",
+        "Id": "205",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": "\u00a0Bug:\u00a0Linux files missing"
+    },
+    {
+        "Name": "Source 2007 Dedicated Server",
+        "Id": "310",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Source Dedicated Server",
+        "Id": "205",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Source SDK Base 2013 Dedicated Server",
+        "Id": "244310",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Squad Dedicated Server",
+        "Id": "403240",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Sven Co-op Dedicated Server",
+        "Id": "276060",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": "Supported on Debian and derivatives (including Ubuntu) only. First enable i386 with `dpkg --add-architecture i386` if running on amd64, then `apt install libc6:i386 zlib1g:i386 libssl1.1:i386 libstdc++6:i386`."
+    },
+    {
+        "Name": "Team Fortress 2 Dedicated Server",
+        "Id": "232250",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Team Fortress Classic Dedicated Server",
+        "Id": "90",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": "+app_set_config \"90 mod tfc\""
+    },
+    {
+        "Name": "Tower Unite Dedicated Server",
+        "Id": "439660",
+        "has_steamcmd_client": true,
+        "has_steam_client": false,
+        "has_anonymous_login": true,
+        "note": ""
+    },
+    {
+        "Name": "Zombie Panic Source Dedicated Server",
+        "Id": "17505",
+        "has_steamcmd_client": true,
+        "has_steam_client": true,
+        "has_anonymous_login": true,
+        "note": ""
+    }
+]

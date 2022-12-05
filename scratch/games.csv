@@ -1,0 +1,57 @@
+7 Days to Die Dedicated Server,294420,Yes,Yes,No,Game purchase required
+ARK: Survival Evolved Dedicated Server,376030,Yes,No,No,
+Arma 3 Dedicated Server,233780,Yes,Yes,No,
+Black Mesa: Deathmatch Dedicated Server,346680,Yes,Yes,Yes,
+BrainBread 2 Dedicated Server,346330,Yes,No,No,
+Blade Symphony Dedicated Server,228780,Yes,No,No,Game Purchase Required
+BlazeRush Dedicated Server,332850,Yes,Yes,Yes,
+Counter-Strike Dedicated Server,90,Yes,No,Yes,
+Counter-Strike Global Offensive Dedicated Server,740,Yes,No,Yes,Login for public server
+Counter-Strike: Condition Zero Dedicated Server,90,Yes,No,Yes,"+app_set_config ""90 mod czero"""
+Counter-Strike: Source Dedicated Server,232330,Yes,No,Yes,
+Chivalry Medieval Warfare Dedicated Server,220070,Yes,Yes,Yes,
+Dark Horizons: Mechanized Corps Dedicated Server,312070,Yes,No,Yes,
+Day of Defeat Dedicated Server,90,Yes,No,Yes,"+app_set_config ""90 mod dod"""
+Day of Defeat: Source Dedicated Server,232290,Yes,No,Yes,
+Day of Infamy Dedicated Server,462310,Yes,No,Yes,
+Deathmatch Classic Dedicated Server,90,Yes,No,Yes,"+app_set_config ""90 mod dmc"""
+Dota 2 Dedicated Server,570,Yes,Yes,No,
+Don't Starve Together Dedicated Server,343050,Yes,Yes,Yes,
+Fistful of Frags Server,295230,Yes,No,Yes,
+Garry's Mod Dedicated Server,4020,Yes,No,Yes,
+Half-Life 2: Deathmatch Dedicated Server,232370,Yes,No,Yes,
+Hurtworld dedicated server,405100,Yes,No,Yes,Bat file for server.
+Half-Life Deathmatch: Source Dedicated server,255470,Yes,Yes,Yes,
+Half-Life Dedicated Server,90,Yes,Yes,Yes,
+Half-Life: Opposing Force Server,90,Yes,No,Yes,"+app_set_config ""90 mod gearbox"""
+Insurgency 2014 Dedicated Server,237410,Yes,Yes,Yes,
+Insurgency: Modern Infantry Combat Dedicated Server,17705,Yes,Yes,Yes,
+Just Cause 2: Multiplayer - Dedicated Server,261140,Yes,Yes,Yes,
+Killing Floor Dedicated Server - Linux,215360,Yes,No,No,"Please create a new account or use a pre-existing one, account doesn't need to own the game; or else you will get the dreaded ""ERROR! Failed to install app '215360' (No subscription)"""
+Killing Floor 2 Dedicated Server,232130,Yes,Yes,Yes,
+Left 4 Dead 2 Dedicated Server,222860,Yes,Yes,Yes,
+Left 4 Dead Dedicated Server,222840,Yes,Yes,Yes,
+Natural Selection 2 Dedicated Server,4940,Yes,Yes,No,
+NS2: Combat Dedicated Server,313900,Yes,No,Yes,
+No More Room In Hell Dedicated Server,317670,Yes,No,No,
+Out of Reach Dedicated Server,406800,Yes,No,Yes,
+"Pirates, Vikings, and Knights II Dedicated Server",17575,Yes,Yes,Yes,
+Project Zomboid Dedicated Server,108600,Yes,No,No,Game Purchase Required
+Red Orchestra Linux Dedicated Server,223250,Yes,Yes,No,
+Ricochet Dedicated Server,90,Yes,No,Yes,"+app_set_config ""90 mod ricochet"""
+Rust Dedicated Server,258550,Yes,No,Yes,
+Serious Sam 3 Dedicated Server,41080,Yes,Yes,No,
+Source SDK Base 2006 MP Dedicated Server,205,Yes,Yes,Yes, Bug: Linux files missing
+Source 2007 Dedicated Server,310,Yes,Yes,Yes,
+Source Dedicated Server,205,Yes,Yes,Yes,
+Source SDK Base 2013 Dedicated Server,244310,Yes,Yes,Yes,
+Squad Dedicated Server,403240,Yes,Yes,Yes,
+Starbound Dedicated server,211820,Yes,Yes,No,Game Purchase Required
+Sven Co-op Dedicated Server,276060,Yes,Yes,Yes,"Supported on Debian and derivatives (including Ubuntu) only. First enable i386 with `dpkg --add-architecture i386` if running on amd64, then `apt install libc6:i386 zlib1g:i386 libssl1.1:i386 libstdc++6:i386`."
+Team Fortress 2 Dedicated Server,232250,Yes,No,Yes,
+Team Fortress Classic Dedicated Server,90,Yes,No,Yes,"+app_set_config ""90 mod tfc"""
+The Ship Dedicated Server,2403,Yes,Yes,No,
+Tower Unite Dedicated Server,439660,Yes,No,Yes,
+Terraria Dedicated Server,105600,Yes,Yes,No,Game Purchase Required
+Unturned Dedicated Server,1110390,Yes,Yes,No,
+Zombie Panic Source Dedicated Server,17505,Yes,Yes,Yes,
