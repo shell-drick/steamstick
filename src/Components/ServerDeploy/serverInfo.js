@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-import { FormH1,  Form, EmailRow, ButtonLink} from './serverElements.js';
+import { FormH1,  Form} from './serverElements.js';
 
 
- const Status = () => {
+const Status = () => 
     
 
     {
@@ -14,6 +14,6 @@ import { FormH1,  Form, EmailRow, ButtonLink} from './serverElements.js';
                 </>
             )
     }
-}
+
 
 export default Status;

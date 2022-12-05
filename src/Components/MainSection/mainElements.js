@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+
 
 export const Container = styled.div`
     min-height: 692px;
@@ -30,74 +30,49 @@ export const EmailRow = styled.div`
     flex-direction: row;
 `;
 
-export const FormH1 = styled.h1`
-    margin-bottom: 16px;
-    margin-top: -36px;
-    font-size: 28px;
+export const FormH1 = styled.li`
+    display: block;
+    right: 20px;
+    bottom: 20px;
+    font-size: 28px; 
     line-height: 1.1;
     font-weight: 600;
-    justify-self: center;
-    color: ${({ lightText }) => (lightText ? '#3C403D' : '#3C403D')};
-    @media screen and (max-width: 480px) {
-        font-size: 32px;
-    }
+    
 `;
 
-export const Form = styled.form`
+export const ContentDiv = styled.div`
     background: #AAAAAA;
-    max-width: 800px;
-    height: 300px;
+    max-width: 900px;
+    height: 60%;
     width: 100%;
     z-index: 1;
-    align-items: center;
     display: grid;
     margin: 0 auto;
-    padding: 80px 32px;
+    padding: 1px;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-    @media screen and (max-width: 480px) {
-        padding: 32px 32px;
-    }
+
 `;
 
 export const FormContent = styled.div`
-    height: 100%;
+    height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    @media screen and (max-width: 480px) {
-        padding: 10px; 
-    }
+    justify-content: center
 `;
 
-export const Icon = styled(Link)`
-    margin-left: 32px;
-    margin-top: 32px;
-    text-decoration: none;
-    color: #3C403D;
-    font-weight: 700;
-    font-size: 32px;
-    @media screen and (max-width: 480px) {
-        margin-left: 16px;
-        margin-top: 8px;
-    }
-`;
+
 
 
 export const AboutText = styled.h1`
     font-size: 27px;
     line-height: 1.1;
-    font-weight: 540;
-    color: ${({ lightText }) => (lightText ? '#3C403D' : '#3C403D')};
-    @media screen and (max-width: 480px) {
-        font-size: 32px;
-    }
+    font-weight: 600;
 `;
 
 export const TextWrapper = styled.div`
     max-width: 800px;
     padding-top: 0;
-    padding-bottom: 60px;
     align-self: center;
 `;
 

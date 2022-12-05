@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
-import { Link as LinkS } from 'react-scroll'
 
 
 export const Nav = styled.nav`
@@ -30,7 +29,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-    color: #3C403D ;
+    color: #3C403D;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.7rem;
@@ -40,7 +39,6 @@ export const NavLogo = styled(LinkR)`
     margin-top: 0px;
     font-weight: bold;
     text-decoration: none;
-    font-family: 'Averia Serif Libre', cursive;
 `;
 
 export const MobileIcon = styled.div`

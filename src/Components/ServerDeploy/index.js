@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, FormWrap, TextWrapper,  FormContent, AboutText,FormH1 } from './serverElements.js';
+import {Container, FormWrap, TextWrapper,  FormContent, AboutText } from './serverElements.js';
 import Status from './serverInfo.js';
 
 const ServerStation = () => {

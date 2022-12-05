@@ -1,8 +1,8 @@
 import React from 'react';
-import {Container, FormWrap, TextWrapper,  FormContent, AboutText,FormH1 } from './mainElements.js';
-import MainText from './mainInfo.js';
+import {Container, FormWrap, TextWrapper,  FormContent, AboutText,FormH1 } from './refrenceElements.js';
+import RefInfo from './refrenceInfo.js';
 
-const HomePage = () => {
+const RefContent = () => {
 
     return (
         <>
@@ -11,10 +11,10 @@ const HomePage = () => {
                     <FormContent>
                         <TextWrapper>
                             <AboutText>
-                                Project Overview
+                               Documentation Refrences
                             </AboutText> 
                         </TextWrapper>
-                      <MainText />
+                      <RefInfo/>
                     </FormContent>
                 </FormWrap>
             </Container>
@@ -24,4 +24,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default RefContent;
