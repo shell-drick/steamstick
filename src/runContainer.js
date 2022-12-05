@@ -5,13 +5,13 @@ function getContainer() {
     return docker.container.get('steamapp');
 }
 
-function runContainer(steamAppId) {
+async function runContainer(steamAppId) {
     try {
         getContainer().kill().then(() => docker.container.prune({ }))
     } catch {
         console.log("existing container not found");
     } finally {
-        docker.container.create({
+        return docker.container.create({
             Image: 'steamcmd/steamcmd',
             name: 'steamapp',
             Cmd: ["+login", "anonymous", `+app_update ${steamAppId} +quit`],
@@ -32,8 +32,8 @@ async function getLogs() {
     })
 }
 
-function getContainerStatus() {
-    getContainer().stats()
+async function getContainerStatus() {
+    return getContainer().stats()
 }
 
 function getLogStream(consumer) {
