@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ConsoleContentPane, ConsoleBox, ConsoleTextContainer, ConsoleTextLine, ContainerStatusBox, ContainerStatusLabel, ContainerStatusLight } from './dashboardElements.js';
+// import getContainerStatus from '../../runContainer';
 
 const ServerDashboard = () => {
   return (
@@ -29,18 +30,24 @@ const ContainerShortStatus = () => {
 // console output
 
 const ContainerConsole = () => {
+    const [ consoleDisplay, setConsoleDisplay ] = React.useState([]);
+
+    for (var i=0; i<25; i++) {
+        consoleDisplay.push(`hello world ${i}`);
+    }
+
+
+
     return (
         <>
             <ConsoleBox>
                 <ConsoleTextContainer>
-                    <ConsoleTextLine>hello world</ConsoleTextLine>
+                    {/* { consoleDisplay.map((l) => <ConsoleTextLine readOnly>{l}</ConsoleTextLine>)} */}
+                    {}
                 </ConsoleTextContainer>
             </ConsoleBox>
         </>
     )
 }
-
-
-
 
 export default ServerDashboard;

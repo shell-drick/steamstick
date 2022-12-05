@@ -39,23 +39,26 @@ export const ContainerStatusBox = styled.div`
 export const ConsoleBox = styled.div`
     width: auto;
     height: 100%;
-    padding: 0 5%;
-    padding: 5px;
     margin: 0 5%;
     min-height: 25em;
+    max-height: 25em;
     border: inherit;
     border-radius: inherit;
     background-color: black;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
 `
 
 export const ConsoleTextContainer = styled.ul`
-
+    padding: 0;
+    list-style: none;
+    margin: 0;
 `
 
-export const ConsoleTextLine = styled.textarea`
-    margin: 0;
-    padding: 1px 2.5;
+export const ConsoleTextLine = styled.p`
+    margin: 5px;
     background-color: inherit;
     color: white;
-
-`
+    width: auto;
+`;
