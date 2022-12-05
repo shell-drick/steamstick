@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
-
+import { Link as LinkS } from 'react-scroll'
 
 
 export const Nav = styled.nav`
     background: ${({ scrollNav }) => (scrollNav ? '#B1A6A4' : '#B1A6A4')};
-    height: 100%;
+    height: 80px;
+    position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
-    position: sticky;
     top: 0;
     z-index: 10;
     
@@ -22,7 +22,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    height: 120px;
+    height: 80px;
     z-index: 1;
     width: 100%;
     padding: 0 24px;
@@ -57,3 +57,32 @@ export const MobileIcon = styled.div`
     }
 `;
 
+export const NavMenu = styled.ul`
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-right: -22px;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
+export const NavItem = styled.li`
+    height: 80px;
+`;
+
+export const NavLinks = styled(LinkR)`
+    color: #3C403D;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    font-family: 'Averia Serif Libre', cursive;
+    &.active {
+{/* The next part is the color for the bottom of the nav links that change as you */}
+        border-bottom: 3px solid #697184;
+    }
+`;
