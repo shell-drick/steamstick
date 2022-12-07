@@ -1,5 +1,5 @@
 const express = require("express");
-const { getContainerStatus, runContainer, getLog} = require("./runContainer");
+const { stopContainer, getContainerStatus, runContainer, getLog} = require("./runContainer");
 const app = express();
 const router = express.Router();
 
@@ -18,6 +18,11 @@ router.get('/console', (req, res) => {
 router.get('/start/:id', (req, res) => {
     runContainer(req.params.id)
     .then((container) => res.send("success"));
+})
+
+router.get('/stop', (req, res) => {
+    stopContainer()
+    .then(() => res.send("success")); 
 })
 
 app.use('/', express.static("../build"));

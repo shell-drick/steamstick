@@ -63,7 +63,3 @@ export const ConsoleTextLine = styled.p`
     width: auto;
     display: block;
 `;
-
-export const StartServerButton = styled.button`
-
-`
