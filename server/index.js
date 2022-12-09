@@ -2,7 +2,7 @@ const express = require("express");
 const { stopContainer, getContainerStatus, runContainer, getLog} = require("./runContainer");
 const app = express();
 const router = express.Router();
-
+const path = require("path");
 router.get('/status', (req, res) => {
     getContainerStatus(res);
 })
@@ -27,6 +27,14 @@ router.get('/stop', (req, res) => {
 
 app.use('/', express.static("../build"));
 app.use('/container', router);
+
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname, '../build/index.html'), function(err) {
+    if (err) {
+      res.status(404).send(err)
+    }
+  })
+})
 
 const port = 5000;
 app.listen(port, () => {
