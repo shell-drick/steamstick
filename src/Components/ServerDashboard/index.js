@@ -9,7 +9,7 @@ const ServerDashboard = () => {
     const [ status, setStatus ] = useState(false);
     const [ buttonIcon, setButtonIcon ] = useState(faPlay);
     const [ statusLabel, setStatusLabel ] = useState("Stopped");
-    const [ selectedServer, setSelectedServer ] = useState(ServerOptions[0].Name);
+    const [ selectedServer, setSelectedServer ] = useState(ServerOptions[0]);
     const [ statusColor, setStatusColor ] = useState("red");
     const [ consoleDisplay, setConsoleDisplay ] = useState([{ data: "" }]);
 
@@ -21,6 +21,7 @@ const ServerDashboard = () => {
         e.preventDefault();
         if (!status) {
             const serverId = selectedServer.Id;
+            console.log(selectedServer.Id);
             fetch(`http://localhost:5000/container/start/${serverId}`);
         } else {
             fetch('http://localhost:5000/container/stop');
@@ -65,12 +66,17 @@ const ServerDashboard = () => {
             return () => clearInterval(interval);
     }, [consoleDisplay])
 
+    function selectServer(e) {
+        console.log(e.target.selectedIndex);
+        setSelectedServer(ServerOptions[e.target.selectedIndex]);
+    }
+
     return (
         <>
             <ConsoleContentPane>
                 <div>
                     <form onSubmit={handleFormSubmit} action="">
-                        <select name='select' onChange={(e) => setSelectedServer(ServerOptions[e.target.selectedIndex])}>
+                        <select name='select' onChange={(e) => selectServer(e)}>
                             {listItems}             
                         </select> 
                         <button type="submit" name="submit">

@@ -10,6 +10,7 @@ function getContainer() {
 async function runContainer(steamAppId) {
     
     containerStatus = "starting";
+    console.log(steamAppId)
     try {
         getContainer().kill().catch(() => { return }).finally(() => docker.container.prune())
     } catch {
@@ -18,7 +19,7 @@ async function runContainer(steamAppId) {
         return docker.container.create({
             Image: 'steamcmd/steamcmd',
             name: 'steamapp',
-            Cmd: ["+login", "anonymous", `+app_update ${steamAppId}  +quit`],
+            Cmd: ["+login", "anonymous", "+app_update", steamAppId, "+app_run", steamAppId,  "+quit"],
             HostConfig: {
                 AutoRemove: true
             }
