@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: Install npm
+    package:
+      name: npm
+      state: present
+
+  - name: Start npm server
+    command: npm start
+    args:
+      chdir: /home/steamstick
