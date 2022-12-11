@@ -8,5 +8,4 @@ jobs:
     - uses: actions/checkout@v2
     - uses: saubermacherag/ansible-playbook-docker-action@v1.4
       with:
-        inventory: inventory
-        playbook: playbook.yml
+        playbookName: playbook.yml
