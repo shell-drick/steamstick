@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  become: true
+  remote_user: steamstick
   tasks:
   - name: Install npm
     package:
