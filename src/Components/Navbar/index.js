@@ -22,7 +22,7 @@ const Navbar = () => {
                             <NavLinks to="Bio" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Group Roles</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="ServerDeploy" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Server Deploy</NavLinks>
+                            <NavLinks to="ServerDashPage" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Server Dashboard</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="Refrences" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Refrences</NavLinks>

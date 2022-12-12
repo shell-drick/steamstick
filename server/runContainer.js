@@ -1,4 +1,5 @@
 const { Docker } = require("node-docker-api");
+const path = require("path");
 const docker = new Docker();
 
 var containerStatus = null;
@@ -9,22 +10,30 @@ function getContainer() {
 
 async function runContainer(steamAppId) {
     
-    containerStatus = "starting";
-    console.log(steamAppId)
+    console.log(steamAppId);
     try {
         getContainer().kill().catch(() => { return }).finally(() => docker.container.prune())
     } catch {
         console.log("existing container not found");
     } finally {
+        containerStatus = "starting";
         return docker.container.create({
             Image: 'steamcmd/steamcmd',
             name: 'steamapp',
-            Cmd: ["+login", "anonymous", "+app_update", steamAppId, "+app_run", steamAppId,  "+quit"],
+            Entrypoint: [ "bash", "autostart.sh", steamAppId ],
             HostConfig: {
-                AutoRemove: true
+                AutoRemove: true,
+                Binds: [
+                    `${path.resolve("autostart.sh")}:/root/autostart.sh`,
+                ]
             }
         })
         .then(container => container.start())
+            // .then(container => container.exec.create({
+            //     AttachStdout: true,
+            //     AttachStderr: true,
+            //     Cmd: [ "bash", "prepare.sh" ]
+            // }))
         .then(() => containerStatus = "started")
         .catch(error => console.log(error));
     }
